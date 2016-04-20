@@ -1,0 +1,26 @@
+<div class="login-container">
+          <div id="output"></div>
+          <div class="avatar"></div>
+          <div class="form-box">
+              <!-- <form ng-submit="submit()" name="register" class="form-signin" novalidate>
+                  <input class="form-control" name="email" ng-model="email" type="email" placeholder="username" required autofocus>
+                  <p class="help-block" ng-show="register.email.$dirty && register.email.$invalid">Enter Valid Email</p>
+                  <input class="form-control" name="password" ng-model="password" type="password" placeholder="password" required valid>
+                  <input name="password_confirm" class="form-control" ng-show="register.password.$dirty"  ng-model="password_confirm" type="password" placeholder="confirm" equals="register.password">
+                  <p class="help-block" ng-show="register.password_confirm.$invalid">Match Password Please</p>
+                  <button ng-disabled="register.$invalid" class="btn btn-info btn-block login" type="submit">Login</button>
+              </form> -->
+              <form ng-submit="submit()" name="register" class="form-signin" novalidate>
+                  <!-- <h1 class="form-signin-heading text-muted">Register</h1> -->
+                  <input name="email" ng-model="email" type="email" class="form-control" placeholder="Email address" required>
+                  <p class="help-block" ng-show="register.email.$dirty && register.email.$invalid">Please enter a proper email.</p>
+                  <input name="password" ng-model="password" type="password" class="form-control" placeholder="Password" required>
+                  <input name="password_confirm" ng-model="password_confirm" type="password" class="form-control" placeholder="Confirm Password" validate-equals='password'>
+                  <p class="help-block" ng-show="register.password_confirm.$dirty && register.password_confirm.$invalid">please match the passwords.</p>
+                  <!-- <button ng-disabled="register.$invalid" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button> -->
+                  <button ng-disabled="register.$invalid" class="btn btn-info btn-block login" type="submit">Login</button>
+
+              </form>
+
+          </div>
+      </div>
